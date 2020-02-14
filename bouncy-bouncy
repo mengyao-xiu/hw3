@@ -1,0 +1,94 @@
+var ballX = 0;
+var ballSpeed = 3;
+
+var ballX2 = 0;
+var ballSpeed2 = 5;
+
+var ballX3 = 0;
+var ballSpeed3 = 4;
+
+var ballX4 = 0;
+var ballSpeed4 = 3;
+
+var ballX5 = 0;
+var ballSpeed5 = 4;
+
+var ballX6 = 0;
+var ballSpeed6 = 5;
+
+
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(220);
+  
+  ellipse(ballX, 100, 50);
+  ellipse(ballX2, 200, 50);
+  ellipse(ballX3, 300,50);
+  ellipse(100, ballX4, 50);
+  ellipse(300, ballX5, 50);
+  ellipse(500, ballX6, 50);
+
+  ballX = ballX + ballSpeed;
+  ballX2 = ballX2 + ballSpeed2;
+  ballX3 = ballX3 + ballSpeed3;
+  ballX4 = ballX4 + ballSpeed4;
+  ballX5 = ballX5 + ballSpeed5;
+  ballX6 = ballX6 + ballSpeed6;
+  
+  // bounce the first ball
+  if (ballX > width) {
+    ballSpeed = -ballSpeed;
+  }
+  
+  if (ballX == 0) {
+    ballSpeed = -ballSpeed;
+  }
+  
+  // bounce the second ball
+  if (ballX2 > width) {
+    ballSpeed2 = -ballSpeed2;
+  }
+  
+  if (ballX2 == 0) {
+    ballSpeed2 = -ballSpeed2;
+  }
+  
+  //bounce the third ball
+  if (ballX3 > width) {
+    ballSpeed3 = -ballSpeed3;
+  }
+  
+  if (ballX3 == 0) {
+    ballSpeed3 = -ballSpeed3;
+  }  
+  
+  //bounce the fourth ball
+  if (ballX4 > height) {
+    ballSpeed4 = -ballSpeed4;
+  }
+  
+  if (ballX4 == 0) {
+    ballSpeed4 = -ballSpeed4;
+  }
+  
+  //bounce the fifth ball
+  if (ballX5 > height) {
+    ballSpeed5 = -ballSpeed5;
+  }
+  
+  if (ballX5 == 0) {
+    ballSpeed5 = -ballSpeed5;
+  }
+  
+  //bounce the sixth ball
+  if (ballX6 > height) {
+    ballSpeed6 = -ballSpeed6;
+  }
+  
+  if (ballX6 == 0) {
+    ballSpeed6 = -ballSpeed6;
+  }
+}
