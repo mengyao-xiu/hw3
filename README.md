@@ -8,4 +8,4 @@ if (random(1000) > 999) {
   }
   1/1000 the lawnmower will come by
 3.the variable h is the initial height of the grass
-4.because the height of land is 10, so the start point or the end point need minus 10
+4.because the height of land is 10, so the y of the start point or the end point need minus 10
